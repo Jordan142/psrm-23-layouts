@@ -1,13 +1,17 @@
 /* Runner and pronouns panel. */
-#runner-container1 {
+.runner-container {
 	width: 565px;
 	height: 70px;
 	line-height: 70px;
-	left: 15px;
-	top: 15px;
 	
 	padding-left: 10px;
 	padding-right: 10px;
+}
+
+/* Runner 1 info position. */
+#runner-container1 {
+	left: 15px;
+	top: 15px;
 }
 
 /* Runner name dynamic text. */
@@ -15,13 +19,55 @@
 	max-width: 500px;
 }
 
+.comms-container {
+	width: 283px;
+	height: 50px;
+	line-height: 50px;
+	
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.comms-name {
+	max-width: 220px;
+}
+
+/* Commentator name and pronouns panel. */
+.comms-pronouns {
+	font-size: 18pt;
+}
+
+/* Comms 1 info position. */
+#comms-container1 {
+	left: 15px;
+	top: 105px;
+}
+
+/* Comms 2 info position. */
+#comms-container2 {
+	left: 307px;
+	top: 105px;
+}
+
+/* Comms 3 info position. */
+#comms-container3 {
+	left: 15px;
+	top: 157px;
+}
+
+/* Comms 4 info position. */
+#comms-container4 {
+	left: 307px;
+	top: 157px;
+}
+
 /* Game name panel. */
 #game-name {
 	width: 565px;
-	height: 60px;
-	line-height: 60px;
+	height: 65px;
+	line-height: 65px;
 	left: 15px;
-	top: 228px;
+	top: 226px;
 	
 	padding-left: 10px;
 	padding-right: 10px;
@@ -30,10 +76,11 @@
 /* Category panel. */
 #info-container {
 	width: 565px;
-	height: 40px;
-	line-height: 40px;
+	height: 35px;
+	line-height: 35px;
 	left: 15px;
-	top: 284px;
+	top: 291px;
+	font-size: 20pt;
 	
 	padding-left: 10px;
 	padding-right: 10px;
@@ -42,10 +89,10 @@
 /* Timer panel. */
 #timer {
 	width: 565px;
-	height: 60px;
-	line-height: 60px;
+	height: 63px;
+	line-height: 63px;
 	left: 15px;
-	top: 108px;
+	top: 346px;
 
 	padding-left: 10px;
 	padding-right: 10px;
@@ -55,5 +102,5 @@
 #estimate-container {
 	position: absolute;
 	left: 15px;
-	top: 168px;
+	top: 409px;
 }

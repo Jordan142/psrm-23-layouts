@@ -35,25 +35,67 @@
 	top: 590px;
 }
 
+.comms-container {
+	width: 297px;
+	height: 63px;
+	line-height: 63px;
+	
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.comms-name {
+	max-width: 220px;
+}
+
+/* Commentator name and pronouns panel. */
+.comms-pronouns {
+	font-size: 18pt;
+}
+
+/* Comms 1 info position. */
+#comms-container1 {
+	left: 653px;
+	top: 162px;
+}
+
+/* Comms 2 info position. */
+#comms-container2 {
+	left: 960px;
+	top: 162px;
+}
+
+/* Comms 3 info position. */
+#comms-container3 {
+	left: 653px;
+	top: 227px;
+}
+
+/* Comms 4 info position. */
+#comms-container4 {
+	left: 960px;
+	top: 227px;
+}
+
 /* Game name panel. */
 #game-name {
 	width: 594px;
 	height: 88px;
 	line-height: 88px;
-	left: 653px;
-	top: 15px;
+	left: 15px;
+	top: 840px;
 	
 	padding-left: 10px;
 	padding-right: 10px;
 }
 
-/* Category and estimate panel. */
+/* Category panel. */
 #info-container {
 	width: 594px;
 	height: 42px;
 	line-height: 42px;
-	left: 653px;
-	top: 102px;
+	left: 15px;
+	top: 928px;
 	
 	padding-left: 10px;
 	padding-right: 10px;
@@ -62,10 +104,10 @@
 /* Timer panel. */
 #timer {
 	width: 614px;
-	height: 96px;
-	line-height: 96px;
-	left: 653px;
-	top: 159px;
+	height: 88px;
+	line-height: 88px;
+	left: 1292px;
+	top: 840px;
 
 	font-size: 50pt;
 }
@@ -73,6 +115,6 @@
 /* Estimate panel. */
 #estimate-container {
 	position: absolute;
-	left: 653px;
-	top: 260px;
+	left: 1292px;
+	top: 930px;
 }
