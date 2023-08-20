@@ -1,0 +1,108 @@
+{
+  "name": "psrm-23-layouts",
+  "version": "0.0.0",
+  "description": "Layouts for psrm23",
+  "homepage": "",
+  "author": {
+    "name": "Jordan97",
+    "email": "",
+    "url": ""
+  },
+  "files": [
+    "dashboard",
+    "graphics",
+    "extension.js",
+    "extension"
+  ],
+  "keywords": [
+    "",
+    "nodecg-bundle"
+  ],
+  "nodecg": {
+    "compatibleRange": "^1.9.0",
+    "graphics": [
+      {
+      "file": "3DS_1p.html",
+      "width": 1920,
+      "height": 1080
+      },
+      {
+      "file": "4x3_1p.html",
+      "width": 1920,
+      "height": 1080
+      },
+      {
+      "file": "4x3_4p.html",
+      "width": 1920,
+      "height": 1080
+      },
+      {
+      "file": "16x9_1p.html",
+      "width": 1920,
+      "height": 1080
+      },
+      {
+      "file": "DS_1p.html",
+      "width": 1920,
+      "height": 1080
+      },
+      {
+        "file": "DS_3p.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+      "file": "DS_4p.html",
+      "width": 1920,
+      "height": 1080
+      },
+      {
+      "file": "GB_1p.html",
+      "width": 1920,
+      "height": 1080
+      },
+      {
+      "file": "GB_3p.html",
+      "width": 1920,
+      "height": 1080
+      },
+      {
+      "file": "GBA_1p.html",
+      "width": 1920,
+      "height": 1080
+      },
+      {
+        "file": "GBA_2p.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "GBA_4p.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+      "file": "Intermission.html",
+      "width": 1920,
+      "height": 1080
+      },
+      {
+      "file": "Interview.html",
+      "width": 1920,
+      "height": 1080
+      },
+      {
+      "file": "PreShow.html",
+      "width": 1920,
+      "height": 1080
+      },
+      {
+      "file": "Tech_Issues.html",
+      "width": 1920,
+      "height": 1080
+      }
+    ]
+  },
+  "repository": "https://github.com/nodecg/nodecg.git",
+  "license": "Apache-2.0"
+}
