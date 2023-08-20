@@ -8,6 +8,26 @@
 	font-family: 'Futura Heavy';
 	src: url('../fonts/Futura\ Heavy\ font.ttf');
 }
+
+@font-face {
+	font-family: 'Futura Medium Condensed';
+	src: url('../fonts/futura\ medium\ condensed\ bt.ttf');
+}
+
+@font-face {
+	font-family: 'Rockwell Bold';
+	src: url('../fonts/rockweb.ttf');
+}
+
+@font-face {
+	font-family: 'Swagger Bold';
+	src: url('../fonts/SwaggerBold.ttf');
+}
+
+@font-face {
+	font-family: 'Comic Sans Bold';
+	src: url('../fonts/comicbd.ttf');
+}
 /* You can add an unlimited amount of fonts by copy/pasting @font-face! */
 
 /* General settings. */
@@ -52,15 +72,14 @@ body {
 .comms-container {
 	position: absolute;
 	display: flex;
-	
-	/* border: 2px solid transparent; */
 }
 
 .comms-name {
-	/* margin-right: 10px; */
-	max-width: 1300px;
-
-	/* border: 2px solid transparent; */
+	margin-right: 10px;
+	font-stretch: semi-condensed;
+	float: left;
+	vertical-align: middle;
+	width: 100%;
 }
 
 .comms-pronouns {
