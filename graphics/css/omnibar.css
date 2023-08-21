@@ -1,11 +1,17 @@
+body {
+	margin: 0px;
+}
+
 #omnibar {
-	background-color: #3A3D18;
+	position: absolute;
+	background-color: #ffff00;
 	display: flex;
-	width: 1920px;
-	height: 82.5px;
-	border-style: solid;
-	border-width: 3px 0px 0px 0px;
-	border-color: #A1AC67;
+	width: 1070px;
+	height: 100px;
+	left: 850px;
+	/* border-style: solid; */
+	/* border-width: 3px 0px 0px 0px; */
+	/* border-color: #A1AC67; */
 }
 
 #omnibar > * {
@@ -16,6 +22,7 @@
 
 #omnibar-content {
 	flex: 1;
+	color: #2c88c5;
 }
 
 #omnibar-content * {
@@ -23,11 +30,11 @@
 }
 
 .is-single-line {
-	font-size: 24pt;
+	font-size: 30pt;
 }
 
 .is-multiline {
-	font-size: 18pt;
+	font-size: 20pt;
 	margin: 0;
 }
 
@@ -35,7 +42,7 @@
 	margin: 0 auto;
 }
 
-#charity-logo {
+/* #charity-logo {
 	background-color: #4A511F;
 	padding: 0 0.5rem;
 }
@@ -55,12 +62,12 @@
 	border-style: solid;
 	border-width: 0px 0px 0px 3px;
 	border-color: #A1AC67;
-}
+} */
 
-#charity-logo img {
+/* #charity-logo img {
 	height: 68px;
-}
+} */
 
-#marathon-logo img {
+/* #marathon-logo img {
 	height: 82px;
-}
+} */
