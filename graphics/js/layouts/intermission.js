@@ -51,7 +51,7 @@ function refreshNextRunsData(currentRun) {
 	let upNextInfo = '#up-next-info';
 	let upNextEstimate = '#up-next-estimate';
 	fadeHtml(upNextGame, currentRun.game, true);
-	fadeHtml(upNextInfo, getNamesForRun(runDataActiveRun.value).join(', '), true);
+	fadeHtml(upNextInfo, getNamesForRun(runDataActiveRun.value).join(' vs. '), true);
 	fadeHtml(upNextEstimate, currentRun.estimate, true);
 	// if (nodecg.bundleConfig.customData.useCustomHost && currentRun.customData.host !== undefined)		commented out due to not having a host set up
 	// 	fadeHtml('#host', "Host: " + currentRun.customData.host);											which causes the whole block of code to error

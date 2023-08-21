@@ -10,9 +10,30 @@
 	padding-right: 10px;
 }
 
-/* Runner name dynamic text. */
-.runner-name {
-	max-width: 500px;
+.comms-container {
+	width: 565px;
+	height: 66px;
+	line-height: 66px;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* Commentator name and pronouns panel. */
+.comms-pronouns {
+	font-size: 18pt;
+}
+
+/* Comms 1 info position. */
+#comms-container1 {
+	left: 15px;
+	top: 460px;
+}
+
+/* Comms 2 info position. */
+#comms-container2 {
+	left: 15px;
+	top: 528px;
 }
 
 /* Game name panel. */
@@ -42,10 +63,11 @@
 /* Timer panel. */
 #timer {
 	width: 565px;
-	height: 100px;
-	line-height: 100px;
+	height: 95px;
+	line-height: 95px;
 	left: 15px;
-	top: 460px;
+	top: 755px;
+	font-size: 50pt;
 
 	padding-left: 10px;
 	padding-right: 10px;
@@ -55,7 +77,7 @@
 #estimate-container {
 	position: absolute;
 	left: 15px;
-	top: 558px;
+	top: 851px;
 }
 
 /* Sponsor panel. */

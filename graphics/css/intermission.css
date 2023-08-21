@@ -1,5 +1,5 @@
 /* Donation Total panel. */
-#donation-total {
+/* #donation-total {
 	font-size: 108pt;
 	font-stretch: semi-condensed;
 	width: 420px;
@@ -13,10 +13,10 @@
 	padding-right: 15px;
 	
 	border: 2px solid transparent;
-}
+} */
 
 /* Host panel. */
-#host-container {
+/* #host-container {
     font-size: 30pt;
     height: 59px;
     line-height: 59px;
@@ -28,7 +28,7 @@
 	padding-right: 15px;
 	
 	border: 2px solid transparent;
-}
+} */
 
 /* Up Next label. */
 #up-next-label {
@@ -73,7 +73,7 @@
 
 /* Runner name dynamic text. */
 #up-next-info {
-	max-width: 444px;
+	max-width: 440px;
 	
 	border: 2px solid transparent;	
 }

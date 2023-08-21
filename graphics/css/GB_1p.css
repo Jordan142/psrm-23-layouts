@@ -15,6 +15,36 @@
 	max-width: 500px;
 }
 
+.comms-container {
+	width: 595px;
+	height: 59px;
+	line-height: 59px;
+	
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.comms-name {
+	max-width: 400px;
+}
+
+/* Commentator name and pronouns panel. */
+.comms-pronouns {
+	font-size: 18pt;
+}
+
+/* Comms 1 info position. */
+#comms-container1 {
+	left: 114px;
+	top: 756px;
+}
+
+/* Comms 2 info position. */
+#comms-container2 {
+	left: 114px;
+	top: 817px;
+}
+
 /* Game name panel. */
 #game-name {
 	width: 585px;
@@ -46,6 +76,7 @@
 	line-height: 80px;
 	left: 114px;
 	top: 475px;
+	font-size: 50pt;
 
 	padding-left: 10px;
 	padding-right: 10px;
