@@ -1,6 +1,5 @@
 const ON_DECK_IMGS = [
-	'img/common/calendar.png',
-	'img/common/twitch-logo.webp',
+	'img/common/timer.svg',
 	'img/common/medal_none.png'
 ];
 
@@ -45,42 +44,58 @@ function loadFromSpeedControl() {
 }
 
 function refreshNextRunsData(currentRun) {
-	let nextRuns = getNextRuns(currentRun, 3);
+	let nextRuns = getNextRuns(currentRun, 2);
 
 	let upNextGame = '#up-next-game';
 	let upNextInfo = '#up-next-info';
 	let upNextEstimate = '#up-next-estimate';
 	fadeHtml(upNextGame, currentRun.game, true);
-	fadeHtml(upNextInfo, getNamesForRun(runDataActiveRun.value).join(' vs. '), true);
+	fadeHtml(upNextInfo, getNamesForRun(runDataActiveRun.value).join(', '), true);
 	fadeHtml(upNextEstimate, currentRun.estimate, true);
 	// if (nodecg.bundleConfig.customData.useCustomHost && currentRun.customData.host !== undefined)		commented out due to not having a host set up
 	// 	fadeHtml('#host', "Host: " + currentRun.customData.host);											which causes the whole block of code to error
 	// else
 	// 	fadeHtml('#host', '');
 
+	if (nextRuns.length === 0) {
+		fadeHtml('#on-deck-game1', "", true);
+		fadeHtml('#on-deck-info1', "", true);
+		fadeHtml('#on-deck-estimate1', "", true);
+		$('#timer1').attr('src', ON_DECK_IMGS[1]);
+		fadeHtml('#on-deck-game2', "", true);
+		fadeHtml('#on-deck-info2', "", true);
+		fadeHtml('#on-deck-estimate2', "", true);
+		$('#timer2').attr('src', ON_DECK_IMGS[1]);
+	} else if (nextRuns.length === 1) {
+		fadeHtml('#on-deck-game2', "", true);
+		fadeHtml('#on-deck-info2', "", true);
+		fadeHtml('#on-deck-estimate2', "", true);
+		$('#timer2').attr('src', ON_DECK_IMGS[1]);
+	}
 	let i = 0;
 	for (let run of nextRuns) {
-		if (i >= 3) {
+		if (i >= 2) {
 			break;
 		}
 		let onDeckGame = '#on-deck-game' + (i + 1);
 		let onDeckRunner = '#on-deck-info' + (i + 1);
 		let onDeckEstimate = '#on-deck-estimate' + (i + 1); // Commented out as I don't need the estimate for the Lets Go tournament
-		let onDeckStart = '#on-deck-start' + (i + 1);
-		let onDeckChannel = '#on-deck-channel' + (i + 1);
+		// let onDeckStart = '#on-deck-start' + (i + 1); // Lets Go tournament only
+		// let onDeckChannel = '#on-deck-channel' + (i + 1); // Lets Go tournament only
 		fadeHtml(onDeckGame, run.game, true);
-		fadeHtml(onDeckRunner, getNamesForRun(run).join(' vs. '), true); // Change .vs to , once tournament is done
+		fadeHtml(onDeckRunner, getNamesForRun(run).join(', '), true); // Change .vs to , once tournament is done
 		fadeHtml(onDeckEstimate, run.estimate, true); // Commented out as I don't need the estimate for the Lets Go tournament
-		if (run.customData.raceTime == undefined) {
-			fadeHtml(onDeckStart, 'TBC', true);
-		} else {
-			fadeHtml(onDeckStart, run.customData.raceTime + ' ET', true);
-		}
-		if (run.customData.channel == undefined) {
-			fadeHtml(onDeckChannel, 'TBC', true);
-		} else {
-			fadeHtml(onDeckChannel, run.customData.channel, true);
-		}
+		$('#timer' + (i + 1)).attr('src', ON_DECK_IMGS[0]);
+		// if (run.customData.raceTime == undefined) {
+		// 	fadeHtml(onDeckStart, 'TBC', true);
+		// } else {
+		// 	fadeHtml(onDeckStart, run.customData.raceTime + ' ET', true);
+		// }
+		// if (run.customData.channel == undefined) {
+		// 	fadeHtml(onDeckChannel, 'TBC', true);
+		// } else {
+		// 	fadeHtml(onDeckChannel, run.customData.channel, true);
+		// }
 		// $('#calendar' + (i + 1)).attr('src', ON_DECK_IMGS[0]);
 		// $('#twitch-logo' + (i + 1)).attr('src', ON_DECK_IMGS[1]);
 		i += 1;
