@@ -17,6 +17,14 @@
 	font-size: 20px;
 }
 
+.runner-game {
+	margin-right: 5px;
+	margin-top: 15px;
+	font-stretch: semi-condensed;
+	float: left;
+	vertical-align: middle;
+}
+
 /* Player 1 info position. */
 #runner-container1 {
 	left: 15px;

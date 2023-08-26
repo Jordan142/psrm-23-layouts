@@ -44,8 +44,8 @@ $(() => {
 
 					$('#runner-details' + (i + 1)).data('teamID', player.teamID);
 
-					// Grabs either Pika_Head or Eevee_Head image from common file and attributes it to the source
-					$('#game' + (i + 1) + '-img').data('game-img', 'img/common/' + player.customData.runnerGame + '_Head.png');
+					// Grabs either bulbasaur, charmander or squirtle from image/common
+					$('#game' + (i + 1) + '-img').data('game-img', 'img/common/' + player.customData.runnerGame + '.png');
 					var imgSrc = $('#game' + (i + 1) + '-img').data('game-img');
 					$('#game' + (i + 1) + '-img').attr('src', imgSrc);
 					i += 1;
